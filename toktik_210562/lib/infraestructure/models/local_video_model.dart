@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 class LocalVideoModel {
   final String name;
   final String videoUrl;
@@ -9,7 +7,7 @@ class LocalVideoModel {
   LocalVideoModel({
     required this.name,
     required this.videoUrl,
-    this.likes =0,
+    this.likes = 0,
     this.views = 0,
-  })
+  });
 }
