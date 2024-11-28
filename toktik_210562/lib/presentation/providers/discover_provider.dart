@@ -6,7 +6,7 @@ import 'package:toktik_210562/shared/data/local_video_post.dart';
 class DiscoverProvider extends ChangeNotifier {
   //Todo: repósitory, DataSource
 
-  bool initialloading = true;
+  bool initialLoading = true;
   List<VideoPost> videos = [];
 
   Future<void> loadNextPage() async {
@@ -14,12 +14,12 @@ class DiscoverProvider extends ChangeNotifier {
     //todo: cargar los videos
     await Future.delayed(const Duration(seconds: 2));
     final List<VideoPost> newVideos = videoPosts
-        .map((video) => LocalVideoModel.formJson(video).toVideoPostEntety())
+        .map((video) => LocalVideoModel.formJson(video).toVideoPostEntity())
         .toList();
       
 
     videos.addAll(newVideos);
-    initialloading = false;
+    initialLoading = false;
     notifyListeners();
   }
 }
