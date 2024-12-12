@@ -1,5 +1,11 @@
 List<Map<String, dynamic>> videoPosts = [
   {
+    'name': '6° Simposio NAcional de tecnologia y Educacion.',
+    'videoUrl': 'assets/videos/14.mp4',
+    'likes': 23230,
+    'views': 1523,
+  },
+  {
     'name': 'Subiendo escaleras automáticas',
     'videoUrl': 'assets/videos/1.mp4',
     'likes': 23230,
